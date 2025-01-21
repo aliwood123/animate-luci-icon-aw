@@ -16,5 +16,6 @@
 * Icons from [Lucide](https://lucide.dev/)
 * [Animate CSS](https://daneden.github.io/animate.css/)
 * [Normalize CSS](https://necolas.github.io/normalize.css/)
+* Background gradient from [uiGradients](https://uigradients.com/#Dusk)
 
 
