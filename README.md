@@ -18,4 +18,5 @@
 * [Normalize CSS](https://necolas.github.io/normalize.css/)
 * Background gradient from [uiGradients](https://uigradients.com/#Dusk)
 
-
+## Notes
+* Attempted to move background position to give the appearance the background gradient was animated by wrapping svg in <div> and applying the animation to the <div> instead of the svg element, but I couldn't get it to work. Followed steps in first 7 minutes of this video: https://www.youtube.com/watch?v=zadj2i5wUyc, then used debugger in CodePen and ChatGPT to figure out why it was still not moving, but still couldn't find the problem. 
