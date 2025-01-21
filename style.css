@@ -1,16 +1,97 @@
-/* Diagnostic Styling */
-* {
-  outline: 2px dotted gray;
-} 
-
-/* temp background color */
-body {
-    background: lightgray;
-}
-  
 /* vertical and horizontal centering */
 body {
   display: grid;
   place-content: center;
   height: 100vh;
+  transition:
+    rotate 4s,
+    scale 4s;
+}
+
+svg {
+  scale: 5.6;
+  background: linear-gradient(to bottom, #FD746C, #2C3E50); 
+}
+
+#sun {
+  stroke: #FFDF22;
+  fill: #FFDF22;
+}
+
+#top-branch, #bottom-branch, #trunk {
+  stroke: #a4c195;
+}
+
+#tent-body, #tent-flap-center, #tent-flap-side {
+  stroke: #c9cac9;
+  fill: white;
+}
+
+/* Hover effect on the SVG */
+
+body:hover {
+  height: 100vh;
+  rotate: 360deg;
+  scale: 2;
+}
+
+svg:hover #sun {
+  animation: sun-set 2s 4s ease forwards; 
+}
+
+svg:hover #top-branch,
+svg:hover #bottom-branch,
+svg:hover #trunk {
+  animation: tree 2s 4s ease forwards;
+}
+
+svg:hover #tent-body,
+svg:hover #tent-flap-center,
+svg:hover #tent-flap-side {
+  animation: tent 2s 4s ease forwards;
+}
+
+/* Sun movement animation */
+
+@keyframes sun-set {
+  0% {
+    cy: 4;
+    stroke: #FFDF22;
+    fill: #FFDF22;
+  }
+  100% {
+    cy: 10vh;
+    stroke: #FFB422;
+    fill: #FFB422;
+  }
+}
+
+/* Tree color change animation */
+
+@keyframes tree {
+  0% {
+    stroke: #a4c195;
+  }
+  100% {
+    stroke: #2c3e2c;
+  }
+}
+
+/* Tent color change animation */
+
+@keyframes tent {
+  0% {
+    stroke: #c9cac9;
+    fill: white;
+  }
+  100% {
+    stroke: #454545;
+    fill: #9a9a9a;
+  }
+}
+
+/* :active effect on svg */
+
+body:active {
+  animation: hinge 2s ease forwards;
 }
