@@ -4,8 +4,8 @@ body {
   place-content: center;
   height: 100vh;
   transition:
-    rotate 4s,
-    scale 4s;
+    rotate 3s,
+    scale 3s;
 }
 
 svg {
@@ -36,19 +36,19 @@ body:hover {
 }
 
 svg:hover #sun {
-  animation: sun-set 2s 4s ease forwards; 
+  animation: sun-set 2s 2s ease forwards; 
 }
 
 svg:hover #top-branch,
 svg:hover #bottom-branch,
 svg:hover #trunk {
-  animation: tree 2s 4s ease forwards;
+  animation: tree 2s 2s ease forwards;
 }
 
 svg:hover #tent-body,
 svg:hover #tent-flap-center,
 svg:hover #tent-flap-side {
-  animation: tent 2s 4s ease forwards;
+  animation: tent 2s 2s ease forwards;
 }
 
 /* Sun movement animation */
